@@ -15,8 +15,7 @@ html {
 
 body {
   align-items: center;
-  background-color: #ffffff;
-  color: black;
+  background-color: rgb(37, 37, 37);
   display: flex;
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
@@ -31,4 +30,39 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* Classes */
+
+.button-container {
+  border-radius: 7px;
+  border: 2px solid black;
+  box-shadow: inset 0 2rem 0.4rem -1.9rem rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+  width: 20rem;
+  height: 7.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0 2px 5px black;
+  padding: 1rem;
+  background: linear-gradient(to top, #69696969, #57575757);
+  border: 2px solid black;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 2rem 0.4rem -1.9rem rgba(255, 255, 255, 0.4), 0 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #69696969, #57575757);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.4)
 }
